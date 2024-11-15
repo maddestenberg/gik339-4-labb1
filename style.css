@@ -1,0 +1,32 @@
+body{
+    background-color: #d9bcaa;
+}
+
+button {
+    background-color: #d5b8ab;
+}
+
+div {
+    height: 35px;
+    background-color: #ffffff;
+    border-radius: 2px; 
+}
+
+.ruta {
+    width: 50%;
+    height: 200px;
+    background-color: #c5a190;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    position: relative;
+    margin: 20px auto;
+    border-radius: 5px; 
+}
+
+.target {
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+}
