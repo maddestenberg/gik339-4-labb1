@@ -7,7 +7,7 @@ const rutaElement = document.querySelector('#ruta');
 
 function handleInputEvent(e) {
     const targetElement = e.target;
-    console.log('Event trigger by:', targetElement);
+    console.log('Event triggerd by:', targetElement);
 
     const targetName = targetElement.name;
 
@@ -23,8 +23,8 @@ for (let textField of textFields) {
 
 checkboxElement.addEventListener('change', function() {
     const colorInput = document.querySelector('#color');
-    if (colorInput && colorInput.value.trim()) {
-        divElement.style.backgroundColor = colorInput.value.trim();
+    if (colorInput && colorInput.value) {
+        divElement.style.backgroundColor = colorInput.value;
     } else {
         divElement.style.backgroundColor = '';
     }
@@ -32,6 +32,7 @@ checkboxElement.addEventListener('change', function() {
 }); 
 
 buttonElement.addEventListener('click', function() {
+    console.log('Removing element', divElement);
     divElement.remove();
 });
 
